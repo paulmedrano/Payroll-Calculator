@@ -1,0 +1,129 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #8EC5FC, #E0C3FC); /* Soft pastel gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container - Now a Vertical Rectangle */
+.container {
+    background: rgba(255, 255, 255, 0.3); /* Glass effect */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    width: 400px; /* Reduced width for a vertical look */
+    height: auto; /* Dynamic height */
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Header */
+h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Input Section */
+.input-box {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #222;
+}
+
+/* Adjusted Input Fields */
+label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-top: 8px;
+    color: #444;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #222;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #5B86E5;
+}
+
+/* Compute Button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    background: linear-gradient(to right, #36D1DC, #5B86E5);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+}
+
+/* Results Section (Hidden Initially) */
+.results {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #222;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 10px;
+}
+
+/* Payroll Details Styling */
+.results p {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Highlighted Net Pay */
+.net-pay {
+    font-size: 1.3em;
+    color: #FFD700;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}

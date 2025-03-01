@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Payroll Calculator</h2>
+
+        <div class="form-container">
+            <div class="input-box">
+                <label>Employee Number:</label>
+                <input type="text" id="empNum" placeholder="Enter Employee Number">
+                
+                <label>Last Name:</label>
+                <input type="text" id="lastName" placeholder="Enter Last Name">
+                
+                <label>First Name:</label>
+                <input type="text" id="firstName" placeholder="Enter First Name">
+                
+                <label>Position:</label>
+                <select id="position">
+                    <option value="Manager">Manager</option>
+                    <option value="Supervisor">Supervisor</option>
+                    <option value="Employee">Employee</option>
+                </select>
+                
+                <label>Number of Hours Worked:</label>
+                <input type="number" id="nhw" placeholder="Enter Hours Worked">
+
+                <button id="computeBtn">Compute</button>
+            </div>
+
+            <!-- RESULTS BOX (Initially Hidden) -->
+            <div class="results">
+                <h2>Payroll Details</h2>
+                <p>Rate: <span id="rate"></span></p>
+                <p>Gross Pay: <span id="grossPay"></span></p>
+                <p>Bonus: <span id="bonus"></span></p>
+                <p>Tax: <span id="tax"></span></p>
+                <p>SSS: <span id="sss"></span></p>
+                <p>PAGIBIG: <span id="pagibig"></span></p>
+                <p>Total Deductions: <span id="totalDeductions"></span></p>
+                <p class="net-pay">Net Pay: <span id="netPay"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
